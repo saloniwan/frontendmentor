@@ -1,0 +1,180 @@
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body class="bg-light min-vh-100 p-1">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold d-flex align-items-center p-1" data-bs-toggle="tooltip" href="frontendmentor.html">
+                <img src="images/logo-desktop.svg" href="frontendmentor.html" alt="" class="img-fluid me-2"
+                    style="max-height: 40px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse dropdown" id="navbarMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link fw-bold text-dark" href="#" id="exploreDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            EXPLORE <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="exploreDropdown">
+                            <li><a href="learning-paths.html" class="dropdown-item fw-bold" href="#">LEARNING PATH</a>
+                            </li>
+                            <hr class="mt-0" style="height: 1px; background-color: black; border: 1px;">
+                            <li><a href="Challenges.html" class="dropdown-item fw-bold" href="#">CHALLENGES</a></li>
+                            <hr class="mt-0" style="height: 1px; background-color: black; border: 1px;">
+                            <li><a href="Solution.html" class="dropdown-item fw-bold" href="#">SOLUTION</a></li>
+                            <hr class="mt-0" style="height: 1px; background-color: black; border: 1px;">
+                            <li><a href="Article.html" class="dropdown-item fw-bold" href="#">ARTICLES</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link fw-bold text-dark" href="#" id="companiesDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">FOR COMPANIES <i
+                                class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu" aria-labelledby="companiesDropdown">
+                            <li><a class="dropdown-item fw-bold" href="#">HELP DEVELOPER</a></li>
+                            <hr class="mt-0" style="height: 1px; background-color: black; border: 1px;">
+                            <li><a class="dropdown-item fw-bold" href="#">TRAINEE DEVELOPERS</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold text-dark" href="#">UNLOCK <i class="fas fa-chevron-down"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold text-dark" href="#"><i class="bi bi-bell"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold text-dark" href="#"><i class="fas fa-tshirt"
+                                style="color: red;"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Middle Horizontal Line + Submenu -->
+    <div class="container-fluid position-relative">
+        <hr class="mt-0 mb-0 mt-3" style="height: 1px; background-color: black; border: none;">
+        <div class="d-flex justify-content-start align-items-start gap-3" style="margin-left: 20px; margin-top: -2px;">
+            <div style="border-left: 1px solid gray; height: 60px;"></div>
+            <p class="fw-bold  ps-2 fs-5 mt-2">HOME</p>
+            <div style="border-left: 1px solid gray; height: 60px;"></div>
+
+
+
+            <!-- Navigation Menu -->
+            <nav class="navbar navbar-expand-sm ms-auto me-3">
+                <div class="collapse navbar-collapse dropdown" id="navbarMenu">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link fs-6 text-dark hover-underlineChallege"
+                                href="frontendmentor.html">Feeds</a></li>
+                        <li class="nav-item"><a class="nav-link fs-6 text-dark hover-underlineChallege" href="my-learning.html">My
+                                Learning Path</a></li>
+                        <li class="nav-item"><a class="nav-link fs-6 text-dark hover-underlineChallege"
+                                href="Mychallenges.html">My Challenges</a></li>
+                        <li class="nav-item"><a class="nav-link fs-6 text-dark hover-underlineChallege active-link" href="#">My
+                                Network</a></li>
+                        <li class="nav-item"><a class="nav-link fs-6 text-dark hover-underlineChallege" href="Bookmark.html">My
+                                Bookmark</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+<hr class="mt-0 mb-0" style="height: 1px; background-color: black; border: none;">
+    </div>
+
+    <div class="container mt-4">
+        <div class=" rounded p-3 d-flex justify-content-between align-items-start">
+            <!-- LEFT SIDE -->
+            <div><h3>My Network</h3></div>
+<!-- RIGHT SIDE -->
+            <div class="d-flex flex-column align-items-end">
+                 <span class="feed-text me-2 fw-bold  mb-3 text-primary underline-text">Followers(0) <span
+              class="text-muted underline-feedback underline-text ">&nbsp;&nbsp;
+              Followers(0)</span></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- #rd container -->
+<div class="container-fluid">     <div class="p-4  border rounded">
+  <div class="p-4 text-center rounded" style="background-color:rgb(240, 236, 236);">
+    <h4>No one is following you. Yet....</h4>
+    <p class="p-2">Post helpful feedback and submit solutions to grow your network.</p>
+ <button class="btn btn-primary custom-submit-button w-90 mb-2 bg-danger align-items-end text-end" href ="Submitsolution.html"
+            onclick="window.location">
+            BROWSE SOLUTION
+          </button>
+</div>
+
+</div>
+<footer class="text-white py-5">
+    <div class="Container p-2 fw-bold d-flex align-items-cente fs-4 text-dark">FrontEnd Mentor</div><br>
+    <div class="container">
+      <div class="row">
+        <!-- First Column (Large) -->
+        <div class="col-md-4 mb-4">
+          <h4 class="text-primary">Stay up to date</h4>
+          <p class="text-dark">with new challenges, featured solutions, selected articles, and our latest news.</p>
+        </div>
+
+        <!-- Other 4 Equal Columns -->
+        <div class="col-md-2 mb-4">
+          <h5 class=" mt-2 text-dark  fw-bold fs-5">Frontend Mentor</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-dark">Unlock Pro</a></li>
+            <li><a href="#" class="text-dark">Contact us</a></li>
+            <li><a href="#" class="text-dark">FAQs</a></li>
+            <li><a href="#" class="text-dark">Become a partner</a></li>
+
+
+          </ul>
+        </div>
+        <div class="col-md-2 mb-4">
+          <h5 class=" mt-2 text-dark  fw-bold fs-5">Explore</h5>
+          <ul class="list-unstyled">
+          <li><a href="learning-paths.html" class="text-dark">Learning paths</a></li>
+
+            <li><a href="#" class="text-dark">Challenges</a></li>
+            <li><a href="#" class="text-dark">Solutions</a></li>
+            <li><a href="#" class="text-dark">Articles</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 mb-4">
+          <h5 class=" mt-2 text-dark  fw-bold fs-5">Community</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-dark">Discord</a></li>
+            <li><a href="#" class="text-dark">Guidelines</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 mb-4">
+          <h5 class=" mt-2 text-dark  fw-bold fs-5">For companies</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-dark">Hire developers</a></li>
+            <li><a href="#" class="text-dark">Train developers</a></li>
+            <div class="mt-3 d-flex gap-3">
+          <a href="#" class="fa-brands fa-discord undefined fs-2"></a>
+          <a href="#" class="fa-brands fa-x-twitter undefined fs-2"></a>
+          <a href="#" class="fa-brands fa-linkedin undefined fs-2"></a>
+          <a href="#" class="fa-brands fa-facebook undefined fs-2"></a>
+        </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+
+    

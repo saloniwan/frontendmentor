@@ -1,0 +1,397 @@
+/* Base styles */
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* Main layout container */
+.main-container {
+    /* display: flex;
+  align-items: center;
+  gap: 1cm;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px; */
+    display: flex;
+    align-items: flex-start;
+    /* Aligns top edge of all columns */
+    justify-content: space-between;
+    gap: 1cm;
+    padding: 60px;
+    flex-wrap: nowrap;
+    /* ✅ Prevent items from wrapping */
+}
+
+
+
+/* Stacked rectangles for left and right */
+.side-vertical {
+    display: flex;
+    flex-direction: column;
+    /* gap: 1cm; */
+    gap: 20px;
+}
+
+/* Rectangle styles */
+.rectangle {
+    /* width: 7cm;
+  border: 1px solid #000; /* Thin border */
+    /* box-sizing: border-box;  */
+    width: 7cm;
+    /* Or whatever you prefer */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+/* Small stacked rectangles (left and right) */
+.small-rectangle {
+    height: 13cm;
+}
+
+/* Center large rectangle */
+.large-rectangle {
+    width: 17cm;
+    height: 18.6cm;
+}
+
+/* Background colors */
+/* .red {
+  background-color: lightcoral;
+} */
+/* .orange {
+  background-color: lightsalmon;
+} */
+/* .orange {
+  height: 5cm !important;
+  overflow-y: auto; /* Optional: If content is more than 5cm */
+/* } */
+ .red {
+    height: 10cm;
+    /* Let red auto-adjust */
+}
+.white{
+    height: 7cm;
+}
+
+.orange {
+    height: 5cm;
+    overflow-y: auto;
+}
+
+.pink {
+    height: 13cm;
+    overflow-y: auto;
+}
+.black{
+    height: 13cm;
+    overflow-y: auto;
+}
+.yellow{
+    height: 10cm;
+}
+.skyblue{
+     height: 5cm;
+     overflow-y: auto;
+     width: 12cm;
+}
+
+
+/* =============================
+   Responsive: Mobile View
+   ============================= */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+        gap: 1cm;
+        padding: 1cm;
+    }
+
+    .side-vertical {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .rectangle {
+        width: 100%;
+        max-width: 20cm;
+    }
+
+    .small-rectangle,
+    .large-rectangle {
+        height: auto;
+    }
+}
+
+/* button */
+.center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5cm;
+}
+
+/* Button styling */
+ .custom-hover{
+    padding: 0.5cm 1cm;
+    font-size: 15px;
+    background-color: #f00303;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.custom-hover:hover {
+  background-color: darkred !important;
+}
+.btn.custom-submit-button {
+    background-color: #f00303be  !important;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    padding: 0.5cm 1cm;
+    font-size: 15px;
+    font-weight: bold;
+    /* transition: background-color 0.3s ease; */
+}
+
+.btn.custom-submit-button:hover {
+    background-color: darkred !important;
+}
+
+.me-1 {
+    margin-right: -29.75rem !important;
+}
+
+.btn.Sub-submit-button:hover {
+    background-color: darkred;
+}
+
+/* Responsive: adjust center container */
+@media (max-width: 768px) {
+    .center-container {
+        width: 100%;
+        max-width: 20cm;
+    }
+
+    .submit-button {
+        width: 100%;
+    }
+}
+
+
+/* Css */
+
+.text-primaryCyan {
+    --tw-text-opacity: 1;
+    color: hsl(189 50% 61% / var(--tw-text-opacity));
+}
+a {
+    text-decoration: inherit;
+}
+/* red underline navbar */
+.hover-underlinea {
+  position: relative; /* This is required */
+  display: inline-block; /* Ensures underline fits content */
+}
+
+.hover-underlinea::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(255, 0, 0, 0.962);
+  transition: width 0.3s ease;
+}
+
+.hover-underlinea:hover::after {
+  width: 100%; /* You can change it from 10% to 100% for full underline */
+}
+.active-link::after {
+  width: 90%;
+}
+/* My feed text underline */
+.underline-text {
+  display: inline-block;
+  position: relative;
+}
+
+.underline-text::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* Adjust distance from text */
+  width: 35%;
+  height: 2px;
+  background-color: rgba(21, 0, 255, 0.484); /* Change to your desired color */
+}
+/* underline-feedback */
+.underline-feedback::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* Adjust distance from text */
+  width: 100%;
+  height: 1px;
+  background-color: rgba(128, 128, 128, 0.511); /* Change to your desired color */
+}
+
+.text-primaryGreen {
+    --tw-text-opacity: 1;
+    color: hsl(162 100% 43% / var(--tw-text-opacity));
+}
+/* image hover effect */
+/* Image hover zoom */
+.hover-zoom {
+    transition: transform 0.4s ease;
+}
+.hover-zoom:hover {
+    transform: scale(1.05);
+}
+
+/* Underline animation on heading */
+/* Underline appears instantly on hover */
+.hover-underline {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.hover-underline::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.hover-underline:hover::after {
+    opacity: 1;
+}
+
+/* Solution Page CSS*/
+.underline-Solution{
+  display: inline-block;
+  position: relative;
+}
+
+.underline-Solution::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* Adjust distance from text */
+  width: 35%;
+  height: 2px;
+  background-color: rgba(21, 0, 255, 0.484); /* Change to your desired color */
+}
+/* underline-feedback */
+.underline-Solution::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* Adjust distance from text */
+  width: 100%;
+  height: 1px;
+  background-color: rgba(128, 128, 128, 0.511); /* Change to your desired color */
+}
+
+/* Underline hover */
+
+.underline-hover{
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+.underline-hover1{
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.underline-hover1::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: rgba(255, 0, 0, 0.487);
+  transition: width 0.3s ease;
+}
+
+.underline-hover1:hover::after {
+  width: 100%;
+}
+
+/* Article css hover effect */  
+/* UNDERLINE_HOVER */
+  .hover-lines-container {
+  display: flex;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+
+.hover-lines-container .line-word {
+  position: relative;
+}
+
+.hover-lines-container:hover .line-word::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color:black;
+}
+/* Profile.css */
+
+ .center-container {
+      height: 50vh;
+    }
+
+    .center-box {
+      max-width: 900px;
+      width: 90%;
+      background-color: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    /* hover-underlineChallege */
+  .hover-underlineChallege {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.hover-underlineChallege::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: rgba(255, 0, 0, 0.683);
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-underlineChallege:hover::after {
+  opacity: 1;
+}
+
+/* 🔥 Always show underline for the active item */
+.hover-underlineChallege.active-link::after {
+  opacity: 1;
+}
+
+
+ /* Bookmark css */

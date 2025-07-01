@@ -1,0 +1,309 @@
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body class="bg-light min-vh-100">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold d-flex align-items-center " data-bs-toggle="tooltip"
+               href="frontendmentor.html">
+               <img src="images/logo-desktop.svg" href="frontendmentor.html"  alt="" class="img-fluid me-2" style="max-height: 40px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse dropdown" id="navbarMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link fw-bold text-dark" href="#" id="exploreDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            EXPLORE <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="exploreDropdown">
+                            <li><a href="learning-paths.html" class="dropdown-item fw-bold" href="my-learning.html">LEARNING PATH</a>
+                            </li> <hr class="mt-0" style="height: 1px; background-color: black; border: 1px;">
+                            <li><a href="Challenges.html"  class="dropdown-item fw-bold" href="#">CHALLENGES</a></li>
+                             <hr class="mt-0" style="height: 1px; background-color: black; border: 1px;">
+                            <li><a href="Solution.html" class="dropdown-item fw-bold" href="#">SOLUTION</a></li>
+                             <hr class="mt-0" style="height: 1px; background-color: black; border: 1px;">
+                            <li><a href="Article.html" class="dropdown-item fw-bold" href="#">ARTICLES</a></li>
+
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link fw-bold text-dark" href="#" id="companiesDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">FOR COMPANIES <i
+                                class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu" aria-labelledby="companiesDropdown">
+                            <li><a class="dropdown-item fw-bold" href="#">HELP DEVELOPER</a></li>
+                            <li><a class="dropdown-item fw-bold" href="#">TRAINEE DEVELOPERS</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold text-dark" href="#">UNLOCK <i class="fas fa-chevron-down"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold text-dark" href="#"><i class="bi bi-bell"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold text-dark" href="#"><i class="fas fa-tshirt"
+                                style="color: red;"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid position-relative">
+        <!-- Top Horizontal Line -->
+        <hr class="mt-0 mb-0 mt-3" style="height: 1px; background-color: black; border: none;">
+
+        <!-- Row below the line -->
+        <div class="d-flex justify-content-start align-items-start gap-3" style="margin-left: 20px; margin-top: -2px;">
+            <!-- Vertical Line -->
+            <div style="border-left: 1px solid gray; height: 60px;"></div>
+
+            <!-- Text -->
+            <p class="fw-bold  ps-2 fs-5 mt-2">Learning paths</p>
+
+            <!-- Another vertical line -->
+            <div style="border-left: 1px solid gray; height: 60px;"></div>
+
+            <!-- Navigation Menu -->
+
+        </div>
+
+        <!-- Bottom Horizontal Line -->
+        <hr class="mt-0 mb-0" style="height: 1px; background-color: black; border: none;">
+    </div>
+
+    <!-- Min Container -->
+    <div class="container-fluid mt-3">
+        <div class="row">
+            <div class="col p-5 mt-5 text-white" style="height: 400px;">
+                <h1 class="pb-5 mb-0 text-primary">Learning paths</h1>
+                <p class="text-secondary fs-5 mt-1">Our learning paths help you improve your front-end skills step by
+                    step. Each path covers a different topic, guiding you through essential front-end development topics
+                    to become a skilled developer.
+
+                </p>
+
+            </div>
+            <!-- images -->
+            <div class="col p-3  text-white">
+                <img src="images/learning-paths-hero.webp" alt="Description" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    <!-- Conatiners -->
+</div>
+
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-12">
+                <div class="p-4 bg-white border rounded shadow-sm h-100">
+                    <div class="row">
+                        <!-- Left Partition -->
+                        <div class="col-md-7 p-4">
+                            <button class="button border-primary bg-transparent border rounded mb-4">
+                                <span class="font-bold font-secondary text-white text-sm px-2 p-1 bg-primary">1</span>
+                                <span class="font-bold font-secondary px-1 text-xs uppercase text-primary"
+                                    style="width:auto;">newbie</span>
+                            </button>
+
+                            <h2 class="mb-2">Getting started on Frontend Mentor</h2>
+                            <p class="text-secondary fs-5">These projects will help you find your feet on the Frontend
+                                Mentor platform and give you experience working with designs and building small
+                                projects. They're all HTML & CSS-only challenges, so they'll help you pick up the
+                                basics.</p>
+                            <div class="progress mb-3">
+                                <div class="progress-bar" style="width:10%"></div>
+                            </div>
+                            <h6>13% COMPLETED</h6>
+                        </div>
+
+                        <!-- Right Partition -->
+                        <div class="col-md-5 p-1">
+
+                            <img src="images/samkit9vyygeuxqi6f4q.webp" alt="Description"
+                                class="img-fluid border rounded" style="width: 400px; height: auto;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2nd container -->
+
+            <div class="container p-4 mb-4">
+                <div class="row g-6">
+                    <div class="col-md-12">
+                        <div class="p-4 bg-white border rounded shadow-sm h-100">
+                            <div class="row">
+                                <!-- Left Partition -->
+                                <div class="col-md-7 p-4">
+                                    <button class="button border-primary bg-transparent border rounded mb-4">
+                                        <span
+                                            class="font-bold font-secondary text-white text-sm px-2 p-1 bg-primary">1</span>
+                                        <span class="font-bold font-secondary px-1 text-xs uppercase text-primary"
+                                            style="width:auto;">newbie</span>
+                                    </button>
+
+                                    <h2 class="mb-2">Building responsive layouts</h2>
+                                    <p class="text-secondary fs-5">A crucial part of modern front-end development is
+                                        making web pages look good on various device sizes. The challenges in this path
+                                        are designed to help you get to grips with making layouts that work across all
+                                        devices.</p>
+
+                                </div>
+
+                                <!-- Right Partition -->
+                                <div class="col-md-5 p-1">
+
+                                    <img src="images/svxn9hckf62ieldx5lqz.webp" alt="Description"
+                                        class="img-fluid border rounded" style="width: 400px; height: auto;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3rd container -->
+
+                    <div class="container p-4 mb-4">
+                        <div class="row g-6">
+                            <div class="col-md-12">
+                                <div class="p-4 bg-white border rounded shadow-sm h-100">
+                                    <div class="row">
+                                        <!-- Left Partition -->
+                                        <div class="col-md-7 p-4">
+                                            <button class="button bg-transparent border rounded mb-4"
+                                                style="border-color:chartreuse !important;">
+                                                <span class="font-bold font-secondary text-white text-sm px-2 p-1"
+                                                    style="background-color: chartreuse;">2</span>
+                                                <span
+                                                    class="font-bold font-secondary px-1 text-xs uppercase"
+                                                    style="width:auto ;color: chartreuse;">Junior</span>
+                                            </button>
+
+                                            <h2 class="mb-2">Building responsive layouts</h2>
+                                            <p class="text-secondary fs-5">Adding interactivity to our web pages is a
+                                                key skill of the front-end developer. The challenges in this path are
+                                                designed to guide you through handling common user interactions with
+                                                JavaScript.
+
+                                            </p>
+                                        </div>
+                                        <!-- Right Partition -->
+                                        <div class="col-md-5 p-1"><img src="images/vcu7qvitarxosrblkpld.webp"
+                                                alt="Description" class="img-fluid border rounded"
+                                                style="width: 400px; height: auto;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+<!-- 4th container -->
+
+<div class="container p-4 mb-4">
+                        <div class="row g-6">
+                            <div class="col-md-12">
+                                <div class="p-4 bg-white border rounded shadow-sm h-100">
+                                    <div class="row">
+                                        <!-- Left Partition -->
+                                        <div class="col-md-7 p-4">
+                                            <button class="button bg-transparent border rounded mb-4"
+                                                style="border-color:chartreuse !important;">
+                                                <span class="font-bold font-secondary text-white text-sm px-2 p-1"
+                                                    style="background-color: chartreuse;">2</span>
+                                                <span
+                                                    class="font-bold font-secondary px-1 text-xs uppercase"
+                                                    style="width:auto; color: chartreuse;">Junior</span>
+                                            </button>
+
+                                            <h2 class="mb-2">Building responsive layouts</h2>
+                                            <p class="text-secondary fs-5">Adding interactivity to our web pages is a
+                                                key skill of the front-end developer. The challenges in this path are
+                                                designed to guide you through handling common user interactions with
+                                                JavaScript.
+
+                                            </p>
+                                        </div>
+                                        <!-- Right Partition -->
+                                        <div class="col-md-5 p-1"><img src="images/vcu7qvitarxosrblkpld.webp"
+                                                alt="Description" class="img-fluid border rounded"
+                                                style="width: 400px; height: auto;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Footer -->
+    <footer class="text-white py-5">
+    <div class="Container p-2 fw-bold d-flex align-items-cente fs-4 text-dark">FrontEnd Mentor</div><br>
+    <div class="container">
+      <div class="row">
+        <!-- First Column (Large) -->
+        <div class="col-md-4 mb-4">
+          <h4 class="text-primary">Stay up to date</h4>
+          <p class="text-dark">with new challenges, featured solutions, selected articles, and our latest news.</p>
+        </div>
+
+        <!-- Other 4 Equal Columns -->
+        <div class="col-md-2 mb-4">
+          <h5 class=" mt-2 text-dark  fw-bold fs-5">Frontend Mentor</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-dark">Unlock Pro</a></li>
+            <li><a href="#" class="text-dark">Contact us</a></li>
+            <li><a href="#" class="text-dark">FAQs</a></li>
+            <li><a href="#" class="text-dark">Become a partner</a></li>
+
+
+          </ul>
+        </div>
+        <div class="col-md-2 mb-4">
+          <h5 class=" mt-2 text-dark  fw-bold fs-5">Explore</h5>
+          <ul class="list-unstyled">
+          <li><a href="learning-paths.html" class="text-dark">Learning paths</a></li>
+
+            <li><a href="Challenges.html" class="text-dark">Challenges</a></li>
+            <li><a href="#" class="text-dark">Solutions</a></li>
+            <li><a href="#" class="text-dark">Articles</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 mb-4">
+          <h5 class=" mt-2 text-dark  fw-bold fs-5">Community</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-dark">Discord</a></li>
+            <li><a href="#" class="text-dark">Guidelines</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 mb-4">
+          <h5 class=" mt-2 text-dark  fw-bold fs-5">For companies</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-dark">Hire developers</a></li>
+            <li><a href="#" class="text-dark">Train developers</a></li>
+            <div class="mt-3 d-flex gap-3">
+          <a href="#" class="fa-brands fa-discord undefined fs-2"></a>
+          <a href="#" class="fa-brands fa-x-twitter undefined fs-2"></a>
+          <a href="#" class="fa-brands fa-linkedin undefined fs-2"></a>
+          <a href="#" class="fa-brands fa-facebook undefined fs-2"></a>
+        </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+</body>
+
+</html>

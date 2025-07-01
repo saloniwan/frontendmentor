@@ -1,0 +1,408 @@
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body class="bg-light min-vh-100">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold d-flex align-items-center" data-bs-toggle="tooltip"
+                href="frontendmentor.html">
+                <img src="images/logo-desktop.svg" href="frontendmentor.html" alt="" class="img-fluid me-2"
+                    style="max-height: 40px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse dropdown" id="navbarMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link fw-bold text-dark" href="#" id="exploreDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            EXPLORE <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="exploreDropdown">
+                            <li><a href="learning-paths.html" class="dropdown-item fw-bold" href="#">LEARNING PATH</a>
+                            </li>
+                            <hr class="mt-0" style="height: 1px; background-color: black; border: 1px;">
+                            <li><a href="Challenges.html" class="dropdown-item fw-bold" href="#">CHALLENGES</a></li>
+                             <hr class="mt-0" style="height: 1px; background-color: black; border: 1px;">
+                            <li><a href="Solution.html" class="dropdown-item fw-bold" href="#">SOLUTION</a></li>
+                            <hr class="mt-0" style="height: 1px; background-color: black; border: 1px;">
+                            <li><a href="Article.html" class="dropdown-item fw-bold" href="#">ARTICLES</a></li>
+
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link fw-bold text-dark" href="#" id="companiesDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">FOR COMPANIES <i
+                                class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu" aria-labelledby="companiesDropdown">
+                            <li><a class="dropdown-item fw-bold" href="#">HELP DEVELOPER</a></li>
+                            <hr class="mt-0" style="height: 1px; background-color: black; border: 1px;">
+                            <li><a class="dropdown-item fw-bold" href="#">TRAINEE DEVELOPERS</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold text-dark" href="#">UNLOCK <i class="fas fa-chevron-down"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold text-dark" href="#"><i class="bi bi-bell"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold text-dark" href="#"><i class="fas fa-tshirt"
+                                style="color: red;"></i></a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid position-relative">
+        <!-- Top Horizontal Line -->
+        <hr class="mt-0 mb-0 mt-3" style="height: 1px; background-color: black; border: none;">
+
+        <!-- Row below the line -->
+        <div class="d-flex justify-content-start align-items-start gap-3" style="margin-left: 20px; margin-top: -2px;">
+            <!-- Vertical Line -->
+            <div style="border-left: 1px solid gray; height: 60px;"></div>
+
+            <!-- Text -->
+            <p class="fw-bold  ps-2 fs-5 mt-2">CHALLENGES</p>
+
+            <!-- Another vertical line -->
+            <div style="border-left: 1px solid gray; height: 60px;"></div>
+        </div>
+        <!-- Bottom Horizontal Line -->
+        <hr class="mt-0 mb-0" style="height: 1px; background-color: black; border: none;">
+    </div>
+
+    <!-- Second container -->
+    <div class="container mt-4">
+        <div class="border rounded p-3 d-flex justify-content-between align-items-start">
+            <!-- LEFT SIDE -->
+            <div>
+                <h3>Unlock full access</h3>
+                <ul class="list-unstyled fw-bold mb-0">
+                    <li class="d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-check text-success text-success"></i>
+                        <span>Build our premium projects</span>
+
+                        <span></span>
+                        <i class="fa-solid fa-check text-success"></i>
+                        <span>Access all Figma design files</span>
+                    </li>
+                    </li>
+                    <li class="d-flex align-items-center gap-2 mt-2">
+                        <i class="fa-solid fa-check text-success"></i>
+                        <span>And much more</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- RIGHT SIDE -->
+            <div class="d-flex flex-column align-items-end">
+                <button class="btn custom-submit-button fw-bold fs-6 py-3 px-4">UPGRADE NOW</button>
+
+                <h5 class="text-secondary text-end m-0">
+                    Work in a team? <span class="text-primary">Upgrade your team to Pro</span>
+                </h5>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-6  p-3">
+                <div class="input-group" style="width: 300px;height: 50px;">
+                    <input type="text" class="form-control border-start-0" placeholder="Search Challenges..."
+                        style="width: 100px;">
+                    <span class="input-group-text bg-white border-end-0">
+                        <i class="fa fa-search text-muted"></i>
+                    </span>
+                </div>
+                <p class="p-3">Showing 117 of 117 challenges</p>
+            </div>
+            <div class="col-6  p-3">
+                <div class="d-flex justify-content-end">
+                    <button class="btn btn-outline-primary me-2">
+                        <i class="fa fa-filter me-2"></i> Filter
+                    </button>
+                    <button class="btn btn-outline-primary">
+                        Newest to Oldest
+                    </button>
+                </div>
+                <p class="text-end mt-2">Not sure where to start? Try our learning paths</p>
+            </div>
+        </div>
+
+        <!-- First Conayainer -->
+
+        <div class="container-fluid mt-3">
+            <div class="row">
+                <!-- CARD 1 -->
+                <div class="col-sm-4 p-3">
+                    <div class="border rounded h-100 p-3 bg-white">
+                        <div class="image-wrapper overflow-hidden rounded">
+                            <img src="images/1.webp" alt="Description" class="img-fluid hover-zoom">
+                        </div>
+                        <h4 class="text-dark pt-3 hover-underline">Mood Tracking app</h4>
+                        <div class="d-flex align-items-center gap-3">
+                            <span class="fw-bold text-info">HTML</span>
+                            <span class="fw-bold text-primary">CSS</span>
+                            <span class="fw-bold text-danger">JS</span>
+                            <button class="btn btn-white border ms-auto">Advanced</button>
+                        </div>
+                        <p class="text-secondary mt-3">
+                            Building this app will be a fun way to test a range of your skills.
+                            From working with JSON data to logging and charting mood entries, there's a lot to get stuck
+                            into!
+                        </p>
+                    </div>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="col-sm-4 p-3">
+                    <div class="border rounded h-100 p-3 bg-white">
+                        <div class="image-wrapper overflow-hidden rounded">
+                            <img src="images/2.webp" alt="Description" class="img-fluid hover-zoom">
+                        </div>
+                        <h4 class="text-dark pt-3 hover-underline">Browser extension manager UI</h4>
+                        <div class="d-flex align-items-center gap-3">
+                            <span class="fw-bold text-info">HTML</span>
+                            <span class="fw-bold text-primary">CSS</span>
+                            <span class="fw-bold text-danger">JS</span>
+                            <button class="btn btn-success border ms-auto">Junior</button>
+                        </div>
+                        <p class="text-secondary mt-3">
+                            This project will be a fun way to practice working with dynamic data, filtering data, color
+                            theming, building a responsive grid, and more!
+                        </p>
+                    </div>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="col-sm-4 p-3">
+                    <div class="border rounded h-100 p-3 bg-white">
+                        <div class="image-wrapper overflow-hidden rounded">
+                            <img src="images/3.webp" alt="Description" class="img-fluid hover-zoom">
+                        </div>
+                        <h4 class="text-dark pt-3 hover-underline">Personal blog</h4>
+                        <div class="d-flex align-items-center gap-3">
+                            <span class="fw-bold text-info">HTML</span>
+                            <span class="fw-bold text-primary">CSS</span>
+                            <span class="fw-bold text-danger">JS</span>
+                            <button class="btn btn-white border ms-auto">Intermediate</button>
+                        </div>
+                        <p class="text-secondary mt-3">
+                            This multi-page personal blog project has a JSON file to practice working with dynamic data.
+                            You can even use a headless CMS to take the difficulty up a notch!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Second container -->
+
+        <div class="container-fluid mt-3">
+            <div class="row">
+                <!-- CARD 1 -->
+                <div class="col-sm-4 p-3">
+                    <div class="border rounded h-100 p-3 bg-white">
+                        <div class="image-wrapper overflow-hidden rounded">
+                            <img src="images/4.webp" alt="Description" class="img-fluid hover-zoom">
+                        </div>
+                        <h4 class="text-dark pt-3 hover-underline">Character counter</h4>
+                        <div class="d-flex align-items-center gap-3">
+                            <span class="fw-bold text-info">HTML</span>
+                            <span class="fw-bold text-primary">CSS</span>
+                            <span class="fw-bold text-danger">JS</span>
+                            <button class="btn btn-white border ms-auto">Advanced</button>
+                        </div>
+                        <p class="text-secondary mt-3">
+                            This project will test a range of your skills, especially your JavaScript, with the counters
+                            and letter density graph. The theme switcher is another little challenge.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="col-sm-4 p-3">
+                    <div class="border rounded h-100 p-3 bg-white">
+                        <div class="image-wrapper overflow-hidden rounded">
+                            <img src="images/5.webp" alt="Description" class="img-fluid hover-zoom">
+                        </div>
+                        <h4 class="text-dark pt-3 hover-underline">Conference ticket generator</h4>
+                        <div class="d-flex align-items-center gap-3">
+                            <span class="fw-bold text-info">HTML</span>
+                            <span class="fw-bold text-primary">CSS</span>
+                            <span class="fw-bold text-danger">JS</span>
+                            <button class="btn btn-success border ms-auto">Junior</button>
+                        </div>
+                        <p class="text-secondary mt-3">
+                            In this challenge, you'll create a form that generates a ticket. There's a lot of scope for
+                            customizing the generated ticket and putting your own stamp on the project. </p>
+                    </div>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="col-sm-4 p-3">
+                    <div class="border rounded h-100 p-3 bg-white">
+                        <div class="image-wrapper overflow-hidden rounded">
+                            <img src="images/6.webp" alt="Description" class="img-fluid hover-zoom">
+                        </div>
+                        <h4 class="text-dark pt-3 hover-underline">Tech book club landing page</h4>
+                        <div class="d-flex align-items-center gap-3">
+                            <span class="fw-bold text-info">HTML</span>
+                            <span class="fw-bold text-primary">CSS</span>
+                            <button class="btn btn-white border ms-auto">Intermediate</button>
+                        </div>
+                        <p class="text-secondary mt-3">
+                            This multi-page personal blog project has a JSON file to practice working with dynamic data.
+                            You can even use a headless CMS to take the difficulty up a notch!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Third Container -->
+
+        <div class="container-fluid mt-3">
+            <div class="row">
+                <!-- CARD 1 -->
+                <div class="col-sm-4 p-3">
+                    <div class="border rounded h-100 p-3 bg-white">
+                        <div class="image-wrapper overflow-hidden rounded">
+                            <img src="images/7.webp" alt="Description" class="img-fluid hover-zoom">
+                        </div>
+                        <h4 class="text-dark pt-3 hover-underline">Note-taking web app</h4>
+                        <div class="d-flex align-items-center gap-3">
+                            <span class="fw-bold text-info">HTML</span>
+                            <span class="fw-bold text-primary">CSS</span>
+                            <span class="fw-bold text-danger">JS</span>
+                            <button class="btn btn-white border ms-auto">Advanced</button>
+                        </div>
+                        <p class="text-secondary mt-3"> This project has many fun and challenging features to add,
+                            including color and font themes. It can also be built as a full-stack web app!
+                        </p>
+                    </div>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="col-sm-4 p-3">
+                    <div class="border rounded h-100 p-3 bg-white">
+                        <div class="image-wrapper overflow-hidden rounded">
+                            <img src="images/8.webp" alt="Description" class="img-fluid hover-zoom">
+                        </div>
+                        <h4 class="text-dark pt-3 hover-underline">Bento grid</h4>
+                        <div class="d-flex align-items-center gap-3">
+                            <span class="fw-bold text-info">HTML</span>
+                            <span class="fw-bold text-primary">CSS</span>
+                            <button class="btn btn-success border ms-auto">Junior</button>
+                        </div>
+                        <p class="text-secondary mt-3">This project will be a fun way to practice working with dynamic
+                            data, filtering data, color theming, building a responsive grid, and more! </p>
+                    </div>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="col-sm-4 p-3">
+                    <div class="border rounded h-100 p-3 bg-white">
+                        <div class="image-wrapper overflow-hidden rounded">
+                            <img src="images/9.webp" alt="Description" class="img-fluid hover-zoom">
+                        </div>
+                        <h4 class="text-dark pt-3 hover-underline">Personal finance app</h4>
+                        <div class="d-flex align-items-center gap-3">
+                            <span class="fw-bold text-info">HTML</span>
+                            <span class="fw-bold text-primary">CSS</span>
+                            <span class="fw-bold text-danger">JS</span>
+                            <button class="btn btn-white border ms-auto">Intermediate</button>
+                        </div>
+                        <p class="text-secondary mt-3">This multi-page personal blog project has a JSON file to practice
+                            working with dynamic data. You can even use a headless CMS to take the difficulty up a
+                            notch! </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    <!-- Footer -->
+    <footer class="text-white py-5">
+        <div class="Container p-2 fw-bold d-flex align-items-cente fs-4 text-dark"><a class="navbar-brand fw-bold d-flex align-items-center p-1"  href="frontendmentor.html" data-bs-toggle="tooltip">
+        <img src="images/logo-desktop.svg" alt="" class="img-fluid me-2" style="max-height: 40px;">
+      </a></div><br>
+        <div class="container">
+            <div class="row">
+                <!-- First Column (Large) -->
+                <div class="col-md-4 mb-4">
+                    <h4 class="text-primary">Stay up to date</h4>
+                    <p class="text-dark">with new challenges, featured solutions, selected articles, and our latest
+                        news.</p>
+                </div>
+
+                <!-- Other 4 Equal Columns -->
+                <div class="col-md-2 mb-4">
+                    <h5 class=" mt-2 text-dark  fw-bold fs-5">Frontend Mentor</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-dark">Unlock Pro</a></li>
+                        <li><a href="#" class="text-dark">Contact us</a></li>
+                        <li><a href="#" class="text-dark">FAQs</a></li>
+                        <li><a href="#" class="text-dark">Become a partner</a></li>
+
+
+                    </ul>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <h5 class=" mt-2 text-dark  fw-bold fs-5">Explore</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="learning-paths.html" class="text-dark">Learning paths</a></li>
+
+                        <li><a href="Challenges.html" class="text-dark">Challenges</a></li>
+                        <li><a href="#" class="text-dark">Solutions</a></li>
+                        <li><a href="#" class="text-dark">Articles</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <h5 class=" mt-2 text-dark  fw-bold fs-5">Community</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-dark">Discord</a></li>
+                        <li><a href="#" class="text-dark">Guidelines</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <h5 class=" mt-2 text-dark  fw-bold fs-5">For companies</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-dark">Hire developers</a></li>
+                        <li><a href="#" class="text-dark">Train developers</a></li>
+                        <div class="mt-3 d-flex gap-3">
+          <a href="#" class="fa-brands fa-discord undefined fs-2"></a>
+          <a href="#" class="fa-brands fa-x-twitter undefined fs-2"></a>
+          <a href="#" class="fa-brands fa-linkedin undefined fs-2"></a>
+          <a href="#" class="fa-brands fa-facebook undefined fs-2"></a>
+        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+</body>
+
+</html>
